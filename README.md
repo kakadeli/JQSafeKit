@@ -151,7 +151,7 @@ pod  “JQSafeKit”
 
 
 ##[About me -- CSDN](http://blog.csdn.net/qq_31810357)
-##[iOS开发者交流群群：446310206]
+##iOS开发者交流群：446310206
 
 
 
