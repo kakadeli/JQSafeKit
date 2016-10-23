@@ -39,7 +39,7 @@ NSString *nilStr = nil;
 
 - 若有JQSafeKit来防止崩溃，则不会崩溃，并且会将原本会崩溃情况的详细信息打印出来，如下图
 
-![防止崩溃输出日志.png](https://github.com/XiaoHanGe/JQSafeKit/blob/master/JQSafeKitDemo/%E6%88%AA%E5%9B%BE/2.png?raw=trueD%A2%E5%B4%A9%E6%BA%83%E7%9A%84%E8%BE%93%E5%87%BA%E6%97%A5%E5%BF%97.png)
+![防止崩溃输出日志.png](https://github.com/XiaoHanGe/JQSafeKit/blob/master/JQSafeKitDemo/%E6%88%AA%E5%9B%BE/2.png?raw=true)
 
 
 ---
