@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     // 测试
-    [self NSDictionary_Test_InstanceDictionary];
+    [self NSArray_Test_InstanceArray];
 }
 
 //=================================================================

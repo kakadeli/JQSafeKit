@@ -29,7 +29,7 @@ JQSafeKit简介
 `可导致崩溃的代码`
 ```
 NSString *nilStr = nil;
-    NSArray *array = @[@"chenfanfang", nilStr];
+    NSArray *array = @[@"HaRi", nilStr];
 ```
 
 - 若没有JQSafeKit来防止崩溃，则会直接崩溃，如下图
@@ -151,7 +151,7 @@ pod  “JQSafeKit”
 
 
 ##[About me -- CSDN](http://blog.csdn.net/qq_31810357)
-##[QQ群 iOS开发者交流群](446310206)
+##[iOS开发者交流群群：446310206]
 
 
 

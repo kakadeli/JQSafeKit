@@ -22,6 +22,10 @@
 		470475CA1DBC57B7003B06A5 /* NSMutableDictionary+JQSafeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 470475C11DBC57B7003B06A5 /* NSMutableDictionary+JQSafeKit.m */; };
 		470475CB1DBC57B7003B06A5 /* NSMutableString+JQSafeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 470475C31DBC57B7003B06A5 /* NSMutableString+JQSafeKit.m */; };
 		470475CC1DBC57B7003B06A5 /* NSString+JQSafeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 470475C51DBC57B7003B06A5 /* NSString+JQSafeKit.m */; };
+		470475E81DBCB3F9003B06A5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 470475E41DBCB3F9003B06A5 /* 1.png */; };
+		470475E91DBCB3F9003B06A5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 470475E51DBCB3F9003B06A5 /* 2.png */; };
+		470475EA1DBCB3F9003B06A5 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 470475E61DBCB3F9003B06A5 /* 3.png */; };
+		470475EB1DBCB3F9003B06A5 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 470475E71DBCB3F9003B06A5 /* 4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		470475C31DBC57B7003B06A5 /* NSMutableString+JQSafeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+JQSafeKit.m"; sourceTree = "<group>"; };
 		470475C41DBC57B7003B06A5 /* NSString+JQSafeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JQSafeKit.h"; sourceTree = "<group>"; };
 		470475C51DBC57B7003B06A5 /* NSString+JQSafeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JQSafeKit.m"; sourceTree = "<group>"; };
+		470475E41DBCB3F9003B06A5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		470475E51DBCB3F9003B06A5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		470475E61DBCB3F9003B06A5 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		470475E71DBCB3F9003B06A5 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 				470475741DBC5557003B06A5 /* ViewController.h */,
 				470475751DBC5557003B06A5 /* ViewController.m */,
 				470475771DBC5557003B06A5 /* Main.storyboard */,
+				470475E31DBCB3F9003B06A5 /* 截图 */,
 				4704757A1DBC5557003B06A5 /* Assets.xcassets */,
 				4704757C1DBC5557003B06A5 /* LaunchScreen.storyboard */,
 				4704757F1DBC5557003B06A5 /* Info.plist */,
@@ -181,6 +190,17 @@
 				470475C51DBC57B7003B06A5 /* NSString+JQSafeKit.m */,
 			);
 			path = JQSafeKit;
+			sourceTree = "<group>";
+		};
+		470475E31DBCB3F9003B06A5 /* 截图 */ = {
+			isa = PBXGroup;
+			children = (
+				470475E41DBCB3F9003B06A5 /* 1.png */,
+				470475E51DBCB3F9003B06A5 /* 2.png */,
+				470475E61DBCB3F9003B06A5 /* 3.png */,
+				470475E71DBCB3F9003B06A5 /* 4.png */,
+			);
+			path = "截图";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4704757E1DBC5557003B06A5 /* LaunchScreen.storyboard in Resources */,
+				470475EB1DBCB3F9003B06A5 /* 4.png in Resources */,
+				470475E81DBCB3F9003B06A5 /* 1.png in Resources */,
+				470475E91DBCB3F9003B06A5 /* 2.png in Resources */,
+				470475EA1DBCB3F9003B06A5 /* 3.png in Resources */,
 				4704757B1DBC5557003B06A5 /* Assets.xcassets in Resources */,
 				470475791DBC5557003B06A5 /* Main.storyboard in Resources */,
 			);
@@ -566,6 +590,7 @@
 				4704759A1DBC5558003B06A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4704759B1DBC5558003B06A5 /* Build configuration list for PBXNativeTarget "JQSafeKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +599,7 @@
 				4704759D1DBC5558003B06A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4704759E1DBC5558003B06A5 /* Build configuration list for PBXNativeTarget "JQSafeKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +608,7 @@
 				470475A01DBC5558003B06A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
