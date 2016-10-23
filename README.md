@@ -13,7 +13,7 @@ Foundation框架存在许多潜在崩溃的危险
 
 ---
 
-AvoidCrash简介
+JQSafeKit简介
 ===
 - 这个框架利用runtime技术对一些常用并且容易导致崩溃的方法进行处理，可以有效的防止崩溃。
 - 并且打印出具体是哪一行代码会导致崩溃，让你快速定位导致崩溃的代码。
@@ -32,12 +32,12 @@ NSString *nilStr = nil;
     NSArray *array = @[@"chenfanfang", nilStr];
 ```
 
-- 若没有AvoidCrash来防止崩溃，则会直接崩溃，如下图
+- 若没有JQSafeKit来防止崩溃，则会直接崩溃，如下图
 
 ![崩溃截图.png](https://raw.githubusercontent.com/chenfanfang/AvoidCrash/556cab1b9fa25c8265dd1e8a19c816db20e93c24/AvoidCrashDemo/Screenshot/%E5%B4%A9%E6%BA%83%E6%88%AA%E5%9B%BE.png)
 
 
-- 若有AvoidCrash来防止崩溃，则不会崩溃，并且会将原本会崩溃情况的详细信息打印出来，如下图
+- 若有JQSafeKit来防止崩溃，则不会崩溃，并且会将原本会崩溃情况的详细信息打印出来，如下图
 
 ![防止崩溃输出日志.png](https://raw.githubusercontent.com/chenfanfang/AvoidCrash/556cab1b9fa25c8265dd1e8a19c816db20e93c24/AvoidCrashDemo/Screenshot/%E9%98%B2%E6%AD%A2%E5%B4%A9%E6%BA%83%E7%9A%84%E8%BE%93%E5%87%BA%E6%97%A5%E5%BF%97.png)
 
@@ -59,22 +59,22 @@ pod  “JQSafeKit”
 ---
 ##使用方法
 
-- 在AppDelegate的didFinishLaunchingWithOptions方法中添加如下代码，让AvoidCrash生效
+- 在AppDelegate的didFinishLaunchingWithOptions方法中添加如下代码，让JQSafeKit生效
 
 ```
-//这句代码会让JQSafeKit生效，若没有如下代码，则AvoidCrash就不起作用
+//这句代码会让JQSafeKit生效，若没有如下代码，则JQSafeKit就不起作用
 [JQSafeKit becomeEffective];
 ```
 
-- 若你想要获取崩溃日志的所有详细信息，只需添加通知的监听，监听的通知名为:AvoidCrashNotification
+- 若你想要获取崩溃日志的所有详细信息，只需添加通知的监听，监听的通知名为:JQSafeKitNotification
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [AvoidCrash becomeEffective];
+    [JQSafeKit becomeEffective];
     
-    //监听通知:AvoidCrashNotification, 获取AvoidCrash捕获的崩溃日志的详细信息
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dealwithCrashMessage:) name:AvoidCrashNotification object:nil];
+    //监听通知:JQSafeKitNotification, 获取JQSafeKit捕获的崩溃日志的详细信息
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dealwithCrashMessage:) name:JQSafeKitNotification object:nil];
     return YES;
 }
 
@@ -101,7 +101,7 @@ pod  “JQSafeKit”
 ===
 ---
 - NSArray
--  `1. NSArray的快速创建方式 NSArray *array = @[@"chenfanfang", @"AvoidCrash"];  //这种创建方式其实调用的是2中的方法`
+-  `1. NSArray的快速创建方式 NSArray *array = @[@"HaRi", @"JQSafeKit"];  //这种创建方式其实调用的是2中的方法`
 -  `2. +(instancetype)arrayWithObjects:(const id  _Nonnull __unsafe_unretained *)objects count:(NSUInteger)cnt`
 
 - `3. - (id)objectAtIndex:(NSUInteger)index`
@@ -117,7 +117,7 @@ pod  “JQSafeKit”
 ---
 
 - NSDictionary
-- `1. NSDictionary的快速创建方式 NSDictionary *dict = @{@"frameWork" : @"AvoidCrash"}; //这种创建方式其实调用的是2中的方法`
+- `1. NSDictionary的快速创建方式 NSDictionary *dict = @{@"frameWork" : @"JQSafeKit"}; //这种创建方式其实调用的是2中的方法`
 - `2. +(instancetype)dictionaryWithObjects:(const id  _Nonnull __unsafe_unretained *)objects forKeys:(const id<NSCopying>  _Nonnull __unsafe_unretained *)keys count:(NSUInteger)cnt`
 
 ---
